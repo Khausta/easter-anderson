@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .cake {
+        margin-bottom: 12vw;
+        
+        &__wrapper {
+            padding-left: 0;
+            flex-direction: column;
+            gap: 8vw;
+        }
+        
+        &__text {
+            padding-top: 16vw;
+            padding-bottom: 0;
+            margin: auto;
+            width: 60vw;
+            text-align: center;
+
+            span {
+                display: block;
+            }
+
+            span:not(:last-child) {
+                margin-bottom: 5vw;
+            }
+
+        }
+
+        &__img {
+            width: 62vw;
+        }
+    }
+}

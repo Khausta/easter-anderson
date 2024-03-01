@@ -1,0 +1,38 @@
+.order {
+    margin-bottom: clamp(80px, 7vw, 200px);
+
+    .white-btn {
+        margin: 0 auto;
+    }
+
+    &__vars {
+        padding-top: clamp(60px, 6.4vw, 120px);
+        padding-bottom: clamp(50px, 7vw, 130px);
+        padding-left: clamp(50px, 4.6vw, 100px);
+        padding-right: clamp(50px, 4.6vw, 100px);
+        display: flex;
+        justify-content: space-between;
+        gap: clamp(10px, 3.2vw, 70px);
+        background: url("../img/swiper-bg-desk.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+
+    &__var {
+        display: flex;
+        max-width: 28% ;
+        flex-direction: column;
+        justify-content: space-between;
+        height: clamp(180px, 21vw, 500px);
+        color: $white-text-color;
+    }
+
+    &__title {
+        font-size: clamp(20px, 2.5vw, 60px);
+    }
+
+    &__text {
+        font-size: clamp(12px, 1.6vw, 40px);
+    }
+}

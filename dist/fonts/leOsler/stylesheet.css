@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'LeOsler Rough Icon';
+    src: url('LeOsler-RoughIconRegular.eot');
+    src: local('LeOsler Rough Icon'), local('LeOsler-RoughIconRegular'),
+        url('LeOsler-RoughIconRegular.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-RoughIconRegular.woff2') format('woff2'),
+        url('LeOsler-RoughIconRegular.woff') format('woff'),
+        url('LeOsler-RoughIconRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Rough Icon';
+    src: url('LeOsler-RoughIconLight.eot');
+    src: local('LeOsler Rough Icon Light'), local('LeOsler-RoughIconLight'),
+        url('LeOsler-RoughIconLight.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-RoughIconLight.woff2') format('woff2'),
+        url('LeOsler-RoughIconLight.woff') format('woff'),
+        url('LeOsler-RoughIconLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Rough Border';
+    src: url('LeOsler-RoughBorderRegular.eot');
+    src: local('LeOsler Rough Border'), local('LeOsler-RoughBorderRegular'),
+        url('LeOsler-RoughBorderRegular.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-RoughBorderRegular.woff2') format('woff2'),
+        url('LeOsler-RoughBorderRegular.woff') format('woff'),
+        url('LeOsler-RoughBorderRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Rough Inline';
+    src: url('LeOsler-RoughInlineRegular.eot');
+    src: local('LeOsler Rough Inline'), local('LeOsler-RoughInlineRegular'),
+        url('LeOsler-RoughInlineRegular.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-RoughInlineRegular.woff2') format('woff2'),
+        url('LeOsler-RoughInlineRegular.woff') format('woff'),
+        url('LeOsler-RoughInlineRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Rough';
+    src: url('LeOsler-RoughLight.eot');
+    src: local('LeOsler Rough Light'), local('LeOsler-RoughLight'),
+        url('LeOsler-RoughLight.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-RoughLight.woff2') format('woff2'),
+        url('LeOsler-RoughLight.woff') format('woff'),
+        url('LeOsler-RoughLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Rough Shadow';
+    src: url('LeOsler-RoughShadowRegular.eot');
+    src: local('LeOsler Rough Shadow'), local('LeOsler-RoughShadowRegular'),
+        url('LeOsler-RoughShadowRegular.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-RoughShadowRegular.woff2') format('woff2'),
+        url('LeOsler-RoughShadowRegular.woff') format('woff'),
+        url('LeOsler-RoughShadowRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Sharp';
+    src: url('LeOsler-SharpLight.eot');
+    src: local('LeOsler Sharp Light'), local('LeOsler-SharpLight'),
+        url('LeOsler-SharpLight.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-SharpLight.woff2') format('woff2'),
+        url('LeOsler-SharpLight.woff') format('woff'),
+        url('LeOsler-SharpLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Rough';
+    src: url('LeOsler-RoughRegular.eot');
+    src: local('LeOsler Rough'), local('LeOsler-RoughRegular'),
+        url('LeOsler-RoughRegular.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-RoughRegular.woff2') format('woff2'),
+        url('LeOsler-RoughRegular.woff') format('woff'),
+        url('LeOsler-RoughRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Rough Shadow';
+    src: url('LeOsler-RoughShadowLight.eot');
+    src: local('LeOsler Rough Shadow Light'), local('LeOsler-RoughShadowLight'),
+        url('LeOsler-RoughShadowLight.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-RoughShadowLight.woff2') format('woff2'),
+        url('LeOsler-RoughShadowLight.woff') format('woff'),
+        url('LeOsler-RoughShadowLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Sprinkles';
+    src: url('LeOsler-SprinklesLight.eot');
+    src: local('LeOsler Sprinkles Light'), local('LeOsler-SprinklesLight'),
+        url('LeOsler-SprinklesLight.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-SprinklesLight.woff2') format('woff2'),
+        url('LeOsler-SprinklesLight.woff') format('woff'),
+        url('LeOsler-SprinklesLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Stamp Icon';
+    src: url('LeOsler-StampIconLight.eot');
+    src: local('LeOsler Stamp Icon Light'), local('LeOsler-StampIconLight'),
+        url('LeOsler-StampIconLight.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-StampIconLight.woff2') format('woff2'),
+        url('LeOsler-StampIconLight.woff') format('woff'),
+        url('LeOsler-StampIconLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Sharp';
+    src: url('LeOsler-SharpRegular.eot');
+    src: local('LeOsler Sharp'), local('LeOsler-SharpRegular'),
+        url('LeOsler-SharpRegular.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-SharpRegular.woff2') format('woff2'),
+        url('LeOsler-SharpRegular.woff') format('woff'),
+        url('LeOsler-SharpRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Stamp Icon';
+    src: url('LeOsler-StampIconRegular.eot');
+    src: local('LeOsler Stamp Icon'), local('LeOsler-StampIconRegular'),
+        url('LeOsler-StampIconRegular.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-StampIconRegular.woff2') format('woff2'),
+        url('LeOsler-StampIconRegular.woff') format('woff'),
+        url('LeOsler-StampIconRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeOsler Stamp';
+    src: url('LeOsler-StampLight.eot');
+    src: local('LeOsler Stamp Light'), local('LeOsler-StampLight'),
+        url('LeOsler-StampLight.eot?#iefix') format('embedded-opentype'),
+        url('LeOsler-StampLight.woff2') format('woff2'),
+        url('LeOsler-StampLight.woff') format('woff'),
+        url('LeOsler-StampLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

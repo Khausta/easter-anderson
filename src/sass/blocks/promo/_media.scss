@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+    .promo {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        background: url("../img/promo-mob.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        min-height: clamp(200px, 105vw, 800px);
+      
+
+        &__text {
+            margin-bottom: 16vw;
+            padding-top: 5vw;
+            letter-spacing: 0.16rem;
+            line-height: 1.5;
+        
+        }
+
+        &__text-box {
+            
+            padding-top: 4vw;
+            width: 52vw;
+            height: 32vw;
+            background: url("../img/promo-bg-text-box-mob.svg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        &__title {
+            margin-bottom: 12vw;
+            font-size: 8vw;
+            line-height: 1.2;
+        }
+
+    }
+}

@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    .masters {
+        background-image: none;
+        padding-bottom: 10vw;
+
+        &__text {
+            margin-bottom: 2vw;
+            width: 100%;
+            padding: 10vw 8vw 4vw 8vw;
+            background-image: url("../img/master-class-bg-mob.svg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            font-size: 7vw;
+            line-height: 0.9;
+            
+        }
+
+        &__oval {
+            padding: 0 4vw;
+        }
+
+        .title {
+            margin-bottom: 9vw;
+            padding: 9vw 10vw;
+            color: $brown-text-color;
+            line-height: 2;
+        }
+
+        &__btn {
+                font-size: 4vw;
+    padding-top: 1.2rem;
+    width: 37vw;
+    height: 13vw;
+    letter-spacing: 0.1rem;
+        }
+
+    }
+}

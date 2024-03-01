@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .faq {
+        padding-top: 5vw;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        background: url("../img/faq-bg-mob.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            align-items: center;
+            gap: 7vw;
+    
+        }
+
+        &__tel {
+           text-align: center;
+
+           span {
+            font-family: "Summer", sans-serif;
+            font-size: 9vw;
+           }
+        }
+    }
+}

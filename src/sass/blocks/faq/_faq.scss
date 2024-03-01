@@ -1,0 +1,27 @@
+.faq {
+    padding-top: clamp(40px, 8vw, 300px);
+    padding-bottom: clamp(40px, 8vw, 300px);
+    padding-left: clamp(100px, 8vw, 300px);
+    padding-right: clamp(100px, 11vw, 360px);
+    background: url("../img/faq-bg-desk-2x.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;
+
+    }
+
+    &__tel {
+        font-size: clamp(20px, 3.8vw, 90px);
+        color: $white-text-color;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+   
+
+    
+}

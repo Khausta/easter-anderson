@@ -1,0 +1,14 @@
+.assortment {
+    margin-bottom: clamp(80px, 6.6vw, 300px);
+    background-image: url("../img/swiper-goods-bg-desk.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    .text {
+        margin-bottom: clamp(60px, 7vw, 300px);
+    }
+
+    &__items {
+        height: clamp(300px, 38vw, 1000px);
+    }
+}

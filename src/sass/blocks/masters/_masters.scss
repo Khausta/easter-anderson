@@ -1,0 +1,36 @@
+.masters {
+    padding-top: clamp(80px, 10.6vw, 300px);
+    padding-bottom: clamp(10px, 6.4vw, 140px);
+
+    background-image: url("../img/master-class-bg-desk.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    .title {
+        margin-bottom: clamp(20px, 6.2vw, 269px);
+        color: $white-text-color;
+    }
+
+    &__text {
+        margin: auto;
+        margin-bottom: clamp(80px, 8.6vw, 300px);
+        width: clamp(500px, 60vw, 1500px);
+        color: $white-text-color;
+       
+    }
+
+    &__oval {
+        padding: 5px 57px;
+        background-image: url("../img/oval.svg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    &__btn {
+        padding-top: 2%;
+        padding-left: 1rem;
+        letter-spacing: 0.4rem;
+        width: clamp(200px, 29.2vw, 500px);
+        height: clamp(60px, 7.4vw, 200px);
+    }
+}

@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+    .order {
+        .title {
+            margin-bottom: 3vw;
+            padding: 9vw 20vw;
+        }
+        
+        &__vars {
+            padding: 0;
+            background: url("../img/swiper-bg-mob.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+
+           
+    
+        }
+
+        &__var {
+            &:not(:nth-child(2)) {
+                display: none;
+            }
+        }
+    }
+
+}
