@@ -29,14 +29,13 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         color: $white-text-color;
-
-
+        text-align: center;
     }
 
     &__title {
         margin-bottom: clamp(30px, 2.7vw, 70px);
         font-size: clamp(50px, 7vw, 130px);
-    
+       
     }
 
  

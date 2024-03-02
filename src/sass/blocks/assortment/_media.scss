@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .assortment {
+        background-image: url("../img/swiper-goods-bg-mob.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        &__title {
+            padding: 13vw 15vw;
+            line-height: 1.5;
+        }
+    }
+}

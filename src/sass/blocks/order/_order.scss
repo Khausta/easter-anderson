@@ -5,27 +5,15 @@
         margin: 0 auto;
     }
 
-    &__vars {
-        padding-top: clamp(60px, 6.4vw, 120px);
-        padding-bottom: clamp(50px, 7vw, 130px);
-        padding-left: clamp(50px, 4.6vw, 100px);
-        padding-right: clamp(50px, 4.6vw, 100px);
-        display: flex;
-        justify-content: space-between;
-        gap: clamp(10px, 3.2vw, 70px);
-        background: url("../img/swiper-bg-desk.png");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-
-    }
-
+  
     &__var {
         display: flex;
-        max-width: 28% ;
+        max-width: 31% ;
         flex-direction: column;
         justify-content: space-between;
         height: clamp(180px, 21vw, 500px);
         color: $white-text-color;
+        text-align: center;
     }
 
     &__title {
@@ -33,6 +21,51 @@
     }
 
     &__text {
+        font-family: "ClearSans";
         font-size: clamp(12px, 1.6vw, 40px);
+        line-height: 1.4;
     }
+
+
+    
+
+}
+
+//кнопки для первого свайпера
+.order-button-prev, .order-button-next {
+    position: absolute;
+    z-index: 2;
+}
+
+.order-button-prev {
+    top: 38%;
+    transform: translate(0%, -50%);
+    left: 7%;
+}
+
+.order-button-next {
+    transform: rotate(180deg) translate(0%, -50%);
+    right: 7%;
+    top: 32%;
+}
+
+.order-non-slider{
+    .order__wrapper {
+        padding-top: clamp(60px, 6.4vw, 120px);
+    padding-bottom: clamp(50px, 7vw, 130px);
+    padding-left: clamp(50px, 4.6vw, 100px);
+    padding-right: clamp(50px, 4.6vw, 100px);
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(10px, 3.2vw, 70px);
+    background: url("../img/swiper-bg-desk.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+    
+
+}
+
+.swiper-wrapper.order__wrapper {
+    box-sizing: border-box;
 }
