@@ -48,22 +48,26 @@ ul {
     margin-block-start: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 body {
     margin: 0;
-    background: green; //для проверки
+    background: #ffffff; //для проверки
 }
+
 
 .main-container {
     position: relative;
     margin: auto;
     max-width: min(1920px, 100%);
-    min-height: 1000px;
+    min-height: clamp(900px, 364vw, 6000px);
     overflow: hidden;
     font-family: "leOsler", sans-serif;
     line-height: 1;
-    // text-align: center;
     background-color: #FFFFFF;
 }
 
@@ -74,9 +78,8 @@ body {
     margin: auto;
     width: 100%;  
     background: url("../img/main-bg.png");
-    min-height: 5000px;
     background-size: 100% auto;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat; 
 }
 
 .pink-btn {
@@ -160,10 +163,15 @@ body {
     text-align: center;
 }
 
+
+
+
+//стили для формы
+
 .form-box {
+
     display: flex;
     flex-direction: column;
-    gap: 25px;
     
 
    
@@ -178,49 +186,15 @@ body {
             display: none;
         }   
     }
-
-    // &__input {
-    //     padding-left: 4%;
-    //     width: clamp(200px, 25vw, 600px);
-    //     height: clamp(20px, 3vw, 100px);
-    //     border-radius: 36px;
-    //     border: none;
-    //     background-color: #ffffff;
-
-    //     &::placeholder {
-    //         color: rgba(0, 0, 0, .5);
-    //     }
-    // }
-
-    // &__checkbox {
-    //     text-align: left;
-    // }
-    
-    // &__check {
-    //     background-color: #ffffff;
-    //     border: none;
-    //     display: inline-block;
-    // }
-
-    // .small-text{
-    //     font-family: "ClearSans", sans-serif;
-    //     font-size: clamp(8px, 0.96vw, 30px);
-    // }
-}
-
-
-//стили для формы
-
-.form-box {
     .b24-form-padding-side, .b24-form-content {
         padding: 0;
     }
 
     .b24-form-wrapper.b24-form-border-bottom {
         width: clamp(200px, 25vw, 600px)    ;
-        // height: clamp(20px, 3vw, 100px) ;
         border: none !important;
         background: none;
+        min-height: 140px;
     }
     
     .b24-form-control.form-box-input, .b24-form-control, .b24-form-control:focus {
@@ -285,6 +259,13 @@ body {
     .b24-form-control-agreement {
         text-align: start;
     }
+    
+    .b24-form-field-agreement-link {
+        font-size: 13px !important;
+        white-space: nowrap;
+        font-family: 'ClearSans', sans-serif;
+        letter-spacing: 0.05rem;
+    }
 
     .b24-form-control-container {
         display: flex;
@@ -293,7 +274,8 @@ body {
     }
 
     .b24-form-control-required, .b24-form-sign {
-        opacity: 0;
+        // opacity: 0;
+        display: none;
     }
 
     .b24-form-control-desc {
@@ -306,6 +288,10 @@ body {
         input {
             margin: 0;
         }
+    }
+
+    .b24-form-field {
+        margin-bottom: 30px;
     }
 
   
@@ -340,7 +326,7 @@ body {
 
     &__weight {
         margin-bottom: 8px;
-        font-size: clamp(6px ,0.8vw, 60px);
+        font-size: clamp(8px ,0.8vw, 60px);
         color: #BFBFBF;
         text-align: end;
     }
@@ -362,22 +348,24 @@ body {
 
     &__name {
         margin-bottom: 20px;
-        font-size: clamp(5px, 1.1vw, 30px);
+        font-size: clamp(9px, 1.1vw, 30px);
     }
 
     &__price {
-        font-size: clamp(5px, 1.1vw, 30px);
+        font-size: clamp(9px, 1.1vw, 30px);
         font-weight: 700;
     }
 
     &__composition-list {
         display: none;
         margin-bottom: 27px;
+        padding: 12px 0;
         width: 100%;
         text-align: center;
         color: #515151;
         background: #D9D9D9;
         border-radius: 6px;
+        font-size: clamp(8px ,0.8vw, 60px);
 
         &._active {
             display: block;
@@ -395,10 +383,13 @@ body {
         display: none;
         width: 100%;
         border-radius: 6px;
-        padding: 6px 30px;
-        // width: 284px;
-        // height: 34px;
+        padding: 6px 0;
+        text-align: center;
+        border: none;
+        color: $white-text-color;
+        font-size: clamp(8px, 0.8vw, 60px);
         background: #7cbd41;
+        line-height: 1.57;
 
         &._active {
             display: block;
@@ -411,7 +402,7 @@ body {
         padding: 6px clamp(1px, 2vw ,60px);
         background: #C44890;
         color: $white-text-color;
-        font-size: clamp(6px ,0.8vw, 60px);
+        font-size: clamp(8px ,0.8vw, 60px);
         line-height: 1.57;
         // width: 134px;
         // height: 34px;
@@ -428,9 +419,8 @@ body {
         // width: 120px;
         // height: 34px;
         background: #e7e7e7;
-        font-size: clamp(6px ,0.8vw, 60px);
+        font-size: clamp(8px ,0.8vw, 60px);
         line-height: 1.57;
-        display: flex;
         flex-direction: row;
         gap: clamp(0px, 1.1vw, 50px);
 
@@ -522,7 +512,7 @@ body {
     }
 
     .text {
-        font-size: 5vw;
+        font-size: 5.6vw;
     }
 
     // .form {
@@ -606,6 +596,7 @@ body {
 
         .b24-form-control-agreement, .b24-form-field-agreement-link {
             color: $white-text-color;
+            
           
         }
         // .b24-form-control.form-box-input {
@@ -623,6 +614,55 @@ body {
         
     }
 
+    .cake-card {
+        padding: 5% 3%;
+
+        &__photo-wrapper {
+            margin-bottom: 3px;
+        }
+
+        &__info {
+            margin-bottom: 4vw;
+        }
+
+        &__composition-list {
+            margin-bottom: 4vw;
+            font-size: 2vw;
+            padding: 1.4vw 0;
+            border-radius: 3px;
+        }
+
+        &__name {
+            margin-bottom: 2vw;
+        }
+
+        &__composition {
+            padding: 0.9vw 3vw;
+            border-radius: 3px;
+            font-size: 2vw;
+        }
+
+        &__add-btn {
+            padding: 0.8vw 0;
+            text-align: center;
+            font-size: 2vw;
+            border-radius: 3px;
+        }
+
+        &__status {
+            padding: 0.8vw 4.3vw;
+            border-radius: 3px;
+            font-size: 2vw;
+        }
+
+        &__counter {
+            padding: 0.8vw 4.3vw;
+            gap: 2vw;
+            border-radius: 3px;
+            font-size: 2vw;
+        }
+    
+    }
   
 }
 

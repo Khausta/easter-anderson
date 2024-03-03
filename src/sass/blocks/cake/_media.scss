@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
     .cake {
-        margin-bottom: 12vw;
+        margin-bottom: 11vw;
         
         &__wrapper {
             padding-left: 0;
@@ -10,11 +10,12 @@
         }
         
         &__text {
-            padding-top: 16vw;
+            padding-top: 15vw;
             padding-bottom: 0;
             margin: auto;
-            width: 60vw;
+            width: 74vw;
             text-align: center;
+            line-height: 0.9;
 
             span {
                 display: block;

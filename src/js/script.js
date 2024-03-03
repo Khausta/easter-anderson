@@ -3,7 +3,7 @@
 const form = document.querySelector('.form-box');
 
 const changeFormElements = () => {
-  document.querySelector('.b24-form-field-agreement-link').textContent = 'Я согласен/а на обработку персональных данных';
+  document.querySelector('.b24-form-field-agreement-link').textContent = 'Я\u00A0согласен/а\u00A0на\u00A0обработку\u00A0персональных\u00A0данных';
   const btn = document.querySelector('.b24-form-btn');
   btn.textContent = 'СВЯЖИТЕСЬ СО МНОЙ';
   btn.classList.add('purple-btn');
@@ -43,28 +43,20 @@ const orderSwiper = new Swiper('.order__vars', {
   }
 });
 
-const assortmentSwiper = new Swiper('.assortment__items', {
-  loop: true,
-  slidesPerView: 3,
-  autoplay: true,
-  spaceBetween: 110,
-  navigation: {
-    nextEl: ".assortment-button-next",
-    prevEl: ".assortment-button-prev",
-  },
-  on: {
-    resize: function enableOnlyMobile(assortmentSwiper){
-      // Disable the slider when the window width is less than or equal to 960
-      if(768 < window.innerWidth){
-        assortmentSwiper.enable()
-        assortmentSwiper.el.classList.remove('assortment-non-slider')
-      }else{
-        assortmentSwiper.disable()
-        assortmentSwiper.el.classList.add('assortment-non-slider')
-      }
+
+
+if (window.innerWidth > 768) {
+  new Swiper('.assortment__items', {
+    loop: true,
+    slidesPerView: 3,
+    autoplay: true,
+    spaceBetween: 110,
+    navigation: {
+      nextEl: ".assortment-button-next",
+      prevEl: ".assortment-button-prev",
     },
-  }
-});
+  });
+}
 
 
 // const promoSwiper = new Swiper('.promo__swiper', {
