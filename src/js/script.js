@@ -1,4 +1,9 @@
-function changeFormElements () {
+const form = document.querySelector('.form-box');
+
+const changeFormElements = () => {
+
+ if (document.querySelector('.b24-form')) {
+  console.log('start');
   document.querySelector('.b24-form-field-agreement-link').textContent = 'Я\u00A0согласен/а\u00A0на\u00A0обработку\u00A0персональных\u00A0данных';
   const btn = document.querySelector('.b24-form-btn');
   btn.textContent = 'СВЯЖИТЕСЬ СО МНОЙ';
@@ -8,24 +13,29 @@ function changeFormElements () {
     e.classList.add('form-box-input');
     index ? e.setAttribute('placeholder', 'Телефон') : e.setAttribute('placeholder', 'Имя'); 
   });
+  return;
+ }
+
+ return setTimeout(changeFormElements, 1000);
 }
 
 //для изменения текcта кнопки и лейбла чек-бокса в форме
 let observer = new MutationObserver(changeFormElements);
 
-function addObserver() {
-  let form = document.querySelector('.form-box');
-  if (!form) {
-    window.setTimeout(() => {
-      addObserver
-    }, 500);
-    return;
-  }
-  const config = {childList: true, subtree: true}
-  observer.observe(form, config);
-}
+// function addObserver() {
+//   let b24form = document.querySelector('.b24-form');
+//   if (!b24form) {
+//     console.log('элемента еще нет');
+//     window.setTimeout(addObserver, 500);
+//     return;
+//   }
+//   console.log(b24form);
+//   const config = {childList: true}
+//   observer.observe(form, config);
+// }
 
 // addObserver();
+observer.observe(form, {childList: true});
 
 
 const orderSwiper = new Swiper('.order__vars', {
