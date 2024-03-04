@@ -1,8 +1,8 @@
 
 
-const form = document.querySelector('.form-box');
+// const form = document.querySelector('.form-box');
 
-const changeFormElements = () => {
+function changeFormElements () {
   document.querySelector('.b24-form-field-agreement-link').textContent = 'Я\u00A0согласен/а\u00A0на\u00A0обработку\u00A0персональных\u00A0данных';
   const btn = document.querySelector('.b24-form-btn');
   btn.textContent = 'СВЯЖИТЕСЬ СО МНОЙ';
@@ -16,10 +16,26 @@ const changeFormElements = () => {
 
 //для изменения текcта кнопки и лейбла чек-бокса в форме
 let observer = new MutationObserver(changeFormElements);
-observer.observe(form, {
-  childList: true, // наблюдать за непосредственными детьми
-  subtree: true, // и более глубокими потомками
-});
+
+
+function addObserver() {
+  let form = document.querySelector('.form-box');
+  if (!form) {
+    window.setTimeout(() => {
+      addObserver
+    }, 500);
+    return;
+  }
+
+  const config = {childList: true, subtree: true}
+  observer.observe(form, config);
+}
+
+addObserver();
+// observer.observe(form, {
+//   // childList: true, // наблюдать за непосредственными детьми
+//   // subtree: true, // и более глубокими потомками
+// });
 
 const orderSwiper = new Swiper('.order__vars', {
   loop: true,
