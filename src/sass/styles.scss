@@ -60,6 +60,10 @@ body {
     background: #ffffff; //для проверки
 }
 
+.phone {
+    text-decoration: none;
+    color: $white-text-color !important;
+}
 
 .main-container {
     position: relative;

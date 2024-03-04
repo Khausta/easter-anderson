@@ -50,6 +50,11 @@ body {
   background: #ffffff;
 }
 
+.phone {
+  text-decoration: none;
+  color: #ffffff !important;
+}
+
 .main-container {
   position: relative;
   margin: auto;
