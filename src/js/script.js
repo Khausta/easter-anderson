@@ -25,7 +25,7 @@ function addObserver() {
   observer.observe(form, config);
 }
 
-addObserver();
+// addObserver();
 
 
 const orderSwiper = new Swiper('.order__vars', {
