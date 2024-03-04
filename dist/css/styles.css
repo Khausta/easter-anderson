@@ -31,7 +31,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 ul {
