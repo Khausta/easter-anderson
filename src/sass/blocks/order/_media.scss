@@ -6,28 +6,37 @@
         }
         
         &__vars {
+            height: 62vw;
             padding: 0;
-            background: url("../img/swiper-bg-mob.svg");
+            background: url("../img/swiper-bg-mob.png");
             background-size: contain;
             background-repeat: no-repeat;
-
-           
-    
         }
 
         &__var {
             padding-top: 11vw;
             max-width: 100%;
-            height: auto;
+            height: 100%;
+            justify-content: start;
+            align-items: center;
+        }
+
+        &__title {
+            margin-bottom: 1.3vw;
+            font-size: 4.8vw;
         }
 
         &__text {
-            margin: auto;
-            margin-bottom: 8vw;
+            margin-bottom: auto;
             line-height: 1.4;
             width: 46%;
             font-size: 4.4vw;
             text-align: center;
+            font-weight: 400;
+
+            &_big {
+                width: 60%;
+            }
         
         }
     }
