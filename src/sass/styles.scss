@@ -39,7 +39,6 @@ hr {
 
 a {
     text-decoration: none;
-    color: $white-text-color !important;
 }
 
 ul {
@@ -441,7 +440,9 @@ body {
      
 
 
-
+    .phone {
+        color: $white-text-color !important;
+    }
 }
 
 

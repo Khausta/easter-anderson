@@ -31,7 +31,6 @@ hr {
 
 a {
   text-decoration: none;
-  color: #ffffff !important;
 }
 
 ul {
@@ -359,6 +358,9 @@ body {
 }
 .cake-card__minus, .cake-card__plus {
   color: #7CBD41;
+}
+.cake-card .phone {
+  color: #ffffff !important;
 }
 
 @media (max-width: 768px) {
